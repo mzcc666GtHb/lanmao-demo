@@ -1,0 +1,995 @@
+@charset "utf-8";
+/*CSS Document */
+/*共同属性*/
+*, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;;
+}
+
+ul, ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #888;
+}
+
+a:hover {
+    color: #406dbf;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.white, .white:hover {
+    color: #fff;
+}
+
+img {
+    outline: none;
+    border: none;
+}
+
+.fl, .left {
+    float: left;
+}
+
+.fr, .right {
+    float: right;
+}
+
+.cr, .clr, .clear {
+    clear: both;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/*:focus{ outline:0 }*/
+input::-moz-focus-inner {
+    border-color: transparent !important;
+}
+input:focus{
+    outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: normal;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.blue, .blue a {
+    color: #406dbf;
+}
+
+a.blue:hover {
+    color: #406dbf;
+    /* text-decoration: underline;*/
+}
+
+.red {
+    color: #e54040;
+}
+
+.gray {
+    color: #666;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    color: #888;
+    background: #eee;
+    font-size: 14px;
+}
+
+body, input {
+    font-family: "microsoft yahei", "宋体";
+}
+
+.icon {
+    margin-right: .2rem;
+    vertical-align: -1px;
+}
+
+/*头部属性*/
+header {
+    height: 50px;
+    line-height: 50px;
+    background: #333238;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.2rem;
+}
+
+.icon-arrow-left {
+    color: #fff;
+    font-size: 1.2rem;
+    left: 5%;
+    top: 1rem;
+}
+
+.icon-arrow-left:hover {
+    color: #fff;
+}
+
+/*主体属性*/
+.layout-wrap .title {
+    font-size: 0.85rem;
+    padding: .5rem 5%;
+    overflow: hidden;
+}
+
+.input-group {
+    background: #fff;
+}
+
+.input-wrap {
+    padding: .6rem 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.input-group .input-wrap:last-child, .input-group .input-wrap-none {
+    border-bottom: none;
+}
+
+.input-wrap label {
+    width: 28%;
+    padding-left: 5%;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #444;
+    float: left;
+    /*vertical-align: -.15rem;*/
+}
+
+.input-wrap .cardCon label {
+    width: 35%;
+}
+
+.input-wrap label .dot {
+    font-size: 1rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.input-wrap .input-text {
+    background: none;
+    border: none;
+    font-size: .9rem;
+}
+.inpList{
+    display: inline-block;
+}
+.inpListTipsCon{
+    padding: 0px 14px 7px;
+    margin-top: -11px;
+}
+
+input.input-text {
+    vertical-align: .1rem;
+    width: 50%;
+}
+
+input.input-text-password
+{
+    font-size: 0.85rem;
+    border: 0px solid #ccc;
+    vertical-align: .1rem;
+    width: 150px;
+    -webkit-text-security:disc;
+}
+
+input.input-text-password1
+{
+    font-size: 0.85rem;
+    border: 0px solid #ccc;
+    vertical-align: .1rem;
+    width: 150px;
+}
+
+input.text-sms {
+    width: 100px;
+}
+
+.cardCon {
+    background: #eee;
+    margin-top: .6rem;
+    padding: .4rem 0;
+}
+
+.input-amountwrap .cardCon {
+    padding-bottom: 0rem;
+}
+
+.cardCon, .input-wrap .cardCon label {
+    font-size: .8rem;
+    color: #777;
+}
+.cardCon .label-value{
+    display: inline-block;
+    width: 10rem;
+}
+
+.cardCon li {
+    padding: .2rem 0;
+}
+
+.icon-arrow-down, .icon-arrow-up {
+    right: 5%;
+    top: 1rem;
+}
+
+.icon-arrow-downright, .icon-arrow-upright {
+    right: 5%;
+    top: 1rem;
+}
+
+.bankArea {
+    right: 5%;
+    top: 50%;
+    margin-top: -.85rem;
+    font-size: .8rem;
+}
+.bankArea1 {
+    right: 5%;
+    top: 50%;
+    margin-top: -.85rem;
+    font-size: .8rem;
+}
+.bankArea1 img {
+    vertical-align: -.5rem;
+    margin-left: 1.2rem;
+    height: 1.7rem;
+}
+
+.bankArea img {
+    vertical-align: -.5rem;
+    margin-left: 1.2rem;
+    height: 1.7rem;
+}
+
+.bank_hide {
+    display: none;
+}
+
+.codeBtn, .codeAgainBtn {
+    width: 28%;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    top: 50%;
+    margin-top: -1rem;
+    right: 5%;
+    font-size: .78rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.codeBtn {
+    background: #406dbf;
+}
+
+.codeAgainBtn {
+    background: #cccccc;
+}
+
+.inpPrompt {
+    font-size: .9rem;
+    background: #eee;
+    position: relative;
+}
+.inpPromptPlus {
+    padding:.3rem 0;
+}
+.inpPrompt .tips {
+    margin-left: 5%;
+}
+.inpPrompt .showPassword {
+    margin-left: 5%;
+}
+.inpPrompt .showNumberPassword {
+    margin-left: 5%;
+}
+.forgetPass {
+    right: 10%;
+    top: .3rem;
+    font-size: .95rem;
+}
+
+.erroTips {
+    color: #e75353;
+}
+
+.erroTips .icon-error {
+    font-size: 0rem;
+    margin-right: .3rem;
+    margin-left: 5%;
+}
+
+
+.alertTips {
+    font-size: 10px;
+    line-height: initial;
+    color: #dc1919;
+    font-weight: 500;
+    padding: 22px 20px 0;
+}
+
+.input-wrap .icon-error {
+    right: 5%;
+    top: 50%;
+    margin-top: -.75rem;
+    color: #eeeeee;
+    font-size: 1.3rem;
+}
+
+.icon-select, .icon-selected {
+    color: #406dbf;
+}
+
+.submitBtn {
+    width: 90%;
+    padding: .75rem 0;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background: #406dbf;
+    margin: 1.2rem 0 .5rem;
+}
+
+.smsCodeBtn
+{
+    width: 90%;
+    padding: .75rem 0;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background: #406dbf;
+    margin: 1.2rem 0 .5rem;
+}
+
+
+
+.ufcRlue {
+    font-size: .8rem;
+}
+
+.input-amountwrap {
+    padding-top: .75rem;
+}
+
+.input-wrap .amount {
+    font-size: 1.35rem;
+    margin-left: 5%;
+    color: #444;
+}
+
+.arrival {
+    display: block;
+    font-size: .85rem;
+    color: #888;
+    margin-left: 5%;
+}
+
+.input-amountwrap .icon {
+    top: 1.05rem;
+}
+
+.changeNumber {
+    right: 5%;
+    top: 50%;
+    margin-top: -.8rem;
+    font-size: 0.85rem;
+}
+
+.processingCon {
+    padding-top: 3.5rem;
+}
+
+.processingCon img {
+    display: block;
+    margin: 0 auto .8rem;
+}
+
+.navList li {
+    display: block;
+    position: relative;
+    padding: 0.6rem 5%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navList a {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.navList li:last-child {
+    /*border-bottom: none;*/
+}
+
+.navList li .icon-arrow-right {
+    top: 1rem;
+    right: 5%;
+    color: #888;
+    font-size: .8rem;
+}
+
+.errorCon, .rightCon {
+    width: 70%;
+    margin: 0 auto;
+    color: #444;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.errorCon .icon, .rightCon .icon {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+footer {
+    padding-top: 2rem;
+}
+
+footer img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*弹出层*/
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    filter: Alpha(opacity=60);
+    opacity: 0.6;
+    background: #000;
+    display: none;
+    z-index: 1002;
+}
+
+#alertLayer, #alertLayer_2 ,.alertLayer{
+    position: fixed;
+    width: 80%;
+    min-height: 130px;
+    background: #fff;
+    z-index: 9999;
+    border-radius: 5px;
+}
+.alertLayer{
+    width: 100%;
+    background: none;
+}
+.alertLayerCon{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #fff;
+}
+.alertLayerBank{
+    width: 90%;
+}
+
+.layerTips {
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: .9rem;
+    color: #444;
+}
+
+#alertLayer .submit-btn, #alertLayer_2 .submit-btn-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    font-size: .95rem;
+}
+
+.alertLayerTitle {
+    font-size: 1rem;
+    color: #444;
+    padding: .8rem 0;
+    text-align: center;
+}
+
+
+.alertLayerSms{position: fixed;
+width: 80%;
+min-height: 130px;
+background: #fff;
+z-index: 9999;
+border-radius: 5px;}
+
+.layerRule {
+    background: #eeeeee;
+    padding: 3%;
+    width: 87%;
+    margin: 0 auto 1rem;
+}
+
+.layerRule div {
+    color: #505050;
+    height: 20rem;
+    overflow-y: scroll;
+    font-size: .75rem;
+    line-height: 18px;
+}
+
+.layerRule p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.submitArea{
+    padding: .9rem 0;
+    overflow: hidden;
+}
+.submitArea .submit-btn,.aSubmit,.aSubmit:hover{
+    width: 40%;
+    border: 1px solid #406dbf;
+    background: #406dbf;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.submitArea .submit-btn2{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .3rem;
+}
+.aSubmit{
+    background: #fff;
+    color: #406dbf;
+}
+.bankList{
+    width: 95%;
+    height: 235px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    color: #444;
+}
+.bankList ul{
+    width: 99%;
+    border:1px solid #eee;
+    margin: 0 auto;
+}
+.bankList li{
+    height: 3.5rem;
+    line-height: 3.4rem;
+    padding: 0 .6rem;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+}
+.bankLogo{
+    width: 40%;
+    height: 2.5rem;
+    line-height: 2.2rem;
+    margin-top: .5rem;
+    margin-right: .9rem;
+    float: left;
+    border-right: 1px dashed #eee;
+    font-size: 1rem;
+}
+.bankLogo img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    margin-right: .2rem;
+}
+@media screen and (max-width: 320px) {
+    .bankList li{
+        padding: 0 .5rem;
+        font-size: .7rem;
+    }
+    .bankLogo{
+        font-size: .9rem;
+        line-height: 2.4rem;
+        width: 41%;
+        margin-right: .7rem;
+    }
+    .bankLogo img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.support-bank{
+    padding-left: 16px;
+}
+.support-bankright{
+    margin-right: 10rem;
+    text-align: right;
+    width: 90%;
+    padding:0 5%;
+}
+/*支行弹窗*/
+.bankBar,.bankinfoList{
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 92%;
+    margin: .3rem auto;
+}
+.bankBar,.input-bank,.bankinfoList li{
+    height: 2.0rem;
+    line-height: 2.0rem;
+}
+.input-bank{
+    border: none;
+    background: none;
+    width: 92%;
+    margin: 0 auto;
+    display: block;
+}
+.bankinfoList{
+    height: 250px;
+    overflow-y: scroll;
+    margin-top: 1rem;
+}
+.bankinfoList li{
+    padding-left: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.bankinfoList li:hover{
+    background: #406dbf;
+    color: #fff;
+}
+/*错误页面*/
+.errorCon{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.errorImg{
+    background: url(../images/error.png) no-repeat center center;
+    width: 180px;
+    height: 162px;
+    background-size: 82% 82%;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+.errorBox{
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+.errorInfo{
+    padding: 15px;
+    font-size: .95rem;
+    overflow: hidden;
+}
+.errorCode{
+    color: #406dbf;
+    border-top: 1px solid #eee;
+    /*height: 2.5rem;*/
+    line-height: 2.5rem;
+    text-align: left;
+    padding-left: 1.3rem;
+}
+.errorBox .errorCode:first-child{
+    border-top: none;
+}
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip {
+    display: inline;
+    margin-top: 11px;
+    line-height: 38px;
+    height: 24px;
+    overflow: hidden;
+    color: #999;
+    font-size: 14px;
+}
+
+#Validform_msg {
+    color: #7d8289;
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    width: 280px;
+    -webkit-box-shadow: 2px 2px 3px #aaa;
+    -moz-box-shadow: 2px 2px 3px #aaa;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    z-index: 99999;
+    display: none;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+    line-height: 25px;
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #fff;
+    position: relative;
+    background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link, #Validform_msg a.Validform_close:visited {
+    line-height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+    color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+    padding: 8px;
+    border: 1px solid #000;
+    border-top: none;
+    text-align: left;
+}
+
+/*==========以上部分是Validform必须的===========*/
+
+/*6位数字密码*/
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.alieditContainer{
+    position: relative;
+}
+
+.sixDigitPassword {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2.6rem;
+    color: #fff;
+    font-size: 0.75rem;
+    border: none;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-user-select: initial;
+    outline: none;
+    z-index: 999;
+    opacity:0;
+    filter:alpha(opacity=0);
+    text-indent: -9999px;
+}
+
+
+.sixDigitPassword-box {
+    width: 100%;
+    cursor:text;
+    background: #fff;
+    outline: none;
+    position: relative;
+    height: 2.6rem;
+    border-radius: 2px;
+    /* display: -webkit-flex;
+     display: flex;
+     justify-content: space-between*/
+}
+.sixDigitPassword-box i {
+    width: 16.66%;
+    float: left;
+    display: block;
+    height: 2.7rem;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+    list-style: none;
+    /* flex:1;*/
+}
+.sixDigitPassword-box .first{
+    border-left: none;
+}
+.sixDigitPassword-box .i-active{
+    border-radius: 0;
+    height: 2.7rem;
+}
+.sixDigitPassword-box b {
+    display: block;
+    margin:1.16rem auto;
+    width: 7px;
+    height: 7px;
+    overflow: hidden;
+    visibility:hidden;
+    background: url('../images/passeord-dot.png') no-repeat;
+    visibility: hidden;
+}
+.sixDigitPassword-box span {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 2.6rem;
+    visibility: hidden;
+    box-sizing: border-box;
+}
+.i-block{
+    width: 100%;
+    display:inline-block;
+    height: 2.7rem;
+}
+.six-password{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+}
+.cardwrap{
+    width: 1.8rem;
+    left: 0;
+    visibility: hidden;
+}
+.alieditContainer {
+    height: 2.7rem;
+}
+/*弹窗*/
+.codeCon{
+    background: #f2f2f2;
+    padding: 0 3%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.codeTitle{
+    font-size: 1.2rem;
+    line-height:3rem;
+    text-align: center;
+    color: #000;
+}
+.codeText p{
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+.codeText p span{
+    color: #e39e6e;
+}
+.codeText .input-inset{
+    height: 2.7rem;
+    line-height: 2.7rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 5%;
+    background: #fff;
+    -webkit-box-shadow: inset 0 0 2px #ccc;
+    -moz-box-shadow:inset 0 0 2px #ccc;
+    box-shadow: inset 0 0 2px #ccc;
+    -o-box-shadow: inset 0 0 2px #ccc;
+}
+.codeText .input-inset .input-text{
+    border: none;
+    outline: none;
+    color: #444;
+    font-size: .8rem;
+}
+.code-again{
+    width: 32%;
+    text-align: center;
+    color: #9d9d9d;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    top: 50%;
+    margin-top: -1rem;
+    right: 5%;
+    font-size: .9rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #fff;
+    outline: none;
+}
+.btn_double{
+    margin:13px 0;
+    overflow: hidden;
+}
+.btn_double a{
+    display: block;
+    width: 43%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn_double .close{
+    float: left;
+    color: #000;
+}
+.btn_double .confirm{
+    float: right;
+}
+.btn_double .confirm.active{
+    background: #406dbf;
+    border: 1px solid #406dbf;
+    color: #fff;
+}
